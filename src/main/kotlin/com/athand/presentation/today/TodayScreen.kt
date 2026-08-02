@@ -10,16 +10,14 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
+import androidx.compose.material3.Checkbox
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.athand.presentation.theme.ThemeMode
@@ -34,10 +32,17 @@ fun TodayScreen(
     todayHeading: String,
     todayInstruction: String,
     reflectionPrompt: String,
+    reflectionText: String,
+    onReflectionTextChange: (String) -> Unit,
+    completed: Boolean,
+    onCompletedChange: (Boolean) -> Unit,
+    onSaveClick: () -> Unit,
+    weekProgressLabel: String,
+    isLoading: Boolean,
+    isSaving: Boolean,
+    statusMessage: String? = null,
     errorMessage: String? = null
 ) {
-    var reflectionText by remember { mutableStateOf("") }
-
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -79,17 +84,61 @@ fun TodayScreen(
             }
         }
 
+        Text(
+            text = weekProgressLabel,
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            Checkbox(
+                checked = completed,
+                onCheckedChange = onCompletedChange,
+                enabled = !isLoading && !isSaving
+            )
+            Text(
+                text = "Mark today's practice complete",
+                style = MaterialTheme.typography.bodyMedium
+            )
+        }
+
         if (errorMessage != null) {
             Text(text = errorMessage, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.error)
         }
 
+        if (statusMessage != null) {
+            Text(
+                text = statusMessage,
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.primary
+            )
+        }
+
         OutlinedTextField(
             value = reflectionText,
-            onValueChange = { reflectionText = it },
+            onValueChange = onReflectionTextChange,
             modifier = Modifier.fillMaxWidth(),
             minLines = 4,
             maxLines = 6,
-            label = { Text(reflectionPrompt) }
+            enabled = !isLoading && !isSaving,
+            label = { Text(reflectionPrompt) },
+            supportingText = {
+                if (isLoading) {
+                    Text("Loading saved reflection...")
+                } else {
+                    Text("Saved locally when you press Save.")
+                }
+            }
         )
+
+        Button(
+            onClick = onSaveClick,
+            enabled = !isLoading && !isSaving
+        ) {
+            Text(if (isSaving) "Saving..." else "Save")
+        }
     }
 }
