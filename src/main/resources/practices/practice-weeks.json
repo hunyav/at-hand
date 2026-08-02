@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "weeks": [
+    {
+      "id": "control-001",
+      "title": "Steady Attention",
+      "principle": "Sort what is yours to direct from what is not.",
+      "overview": "This week builds the habit of returning attention to choices, effort, and attitude when events feel noisy.",
+      "dailyPractices": [
+        {
+          "dayIndex": 0,
+          "heading": "Learn",
+          "instruction": "Write two short lists: what you can influence today and what you cannot. Keep the first list visible.",
+          "reflectionPrompt": "Where did this distinction immediately lower tension?"
+        },
+        {
+          "dayIndex": 1,
+          "heading": "Notice",
+          "instruction": "Each time plans shift, name one response that still belongs to you before reacting.",
+          "reflectionPrompt": "Which response was easiest to reclaim?"
+        },
+        {
+          "dayIndex": 2,
+          "heading": "Practice",
+          "instruction": "Choose one irritation and rehearse a calmer next action instead of replaying the trigger.",
+          "reflectionPrompt": "What changed when you moved from complaint to action?"
+        },
+        {
+          "dayIndex": 3,
+          "heading": "Apply",
+          "instruction": "Before an important conversation, decide your intention and one behavior you will keep no matter the outcome.",
+          "reflectionPrompt": "Did your intention hold under pressure?"
+        },
+        {
+          "dayIndex": 4,
+          "heading": "Examine",
+          "instruction": "Review one moment you felt pulled by circumstances and identify the exact decision point you still had.",
+          "reflectionPrompt": "What signal helps you spot that decision point earlier?"
+        },
+        {
+          "dayIndex": 5,
+          "heading": "Integrate",
+          "instruction": "Pick one recurring stressor and define a standing response you can repeat next time.",
+          "reflectionPrompt": "How does repetition make this feel more manageable?"
+        },
+        {
+          "dayIndex": 6,
+          "heading": "Review",
+          "instruction": "Summarize this week in one sentence beginning with: My effort is best used on...",
+          "reflectionPrompt": "What will you carry into next week?"
+        }
+      ],
+      "sourceNote": "Inspired by classical Stoic distinctions about agency and response.",
+      "tags": [
+        "control",
+        "attention",
+        "agency"
+      ]
+    },
+    {
+      "id": "judgment-002",
+      "title": "Clear Seeing",
+      "principle": "Events arrive first; interpretations arrive after.",
+      "overview": "This week trains a small pause between what happened and the story added to it.",
+      "dailyPractices": [
+        {
+          "dayIndex": 0,
+          "heading": "Learn",
+          "instruction": "Take one concern and split it into facts versus interpretation in two columns.",
+          "reflectionPrompt": "Which part was assumption rather than fact?"
+        },
+        {
+          "dayIndex": 1,
+          "heading": "Notice",
+          "instruction": "When emotion spikes, describe the moment in neutral terms before naming meaning.",
+          "reflectionPrompt": "How did neutral language affect your tone?"
+        },
+        {
+          "dayIndex": 2,
+          "heading": "Practice",
+          "instruction": "Challenge one automatic conclusion by proposing two alternative explanations.",
+          "reflectionPrompt": "Which alternative proved most plausible?"
+        },
+        {
+          "dayIndex": 3,
+          "heading": "Apply",
+          "instruction": "In a difficult exchange, ask one clarifying question before defending your position.",
+          "reflectionPrompt": "What did you learn by asking first?"
+        },
+        {
+          "dayIndex": 4,
+          "heading": "Examine",
+          "instruction": "Revisit a strong reaction from this week and rewrite the event description with only observable details.",
+          "reflectionPrompt": "What became less certain after rewriting?"
+        },
+        {
+          "dayIndex": 5,
+          "heading": "Integrate",
+          "instruction": "Create a personal cue phrase for tense moments: facts first, story second.",
+          "reflectionPrompt": "Where did the cue interrupt escalation?"
+        },
+        {
+          "dayIndex": 6,
+          "heading": "Review",
+          "instruction": "Note one relationship that improved when you separated event from judgment.",
+          "reflectionPrompt": "How will you continue this pause next week?"
+        }
+      ],
+      "sourceNote": "Inspired by Stoic attention to impressions and assent.",
+      "tags": [
+        "judgment",
+        "perception",
+        "clarity"
+      ]
+    },
+    {
+      "id": "values-003",
+      "title": "Purposeful Action",
+      "principle": "Choose actions by values, not by guaranteed results.",
+      "overview": "This week emphasizes consistent conduct even when outcomes remain uncertain.",
+      "dailyPractices": [
+        {
+          "dayIndex": 0,
+          "heading": "Learn",
+          "instruction": "Name one value you want to express this week and one concrete behavior that shows it.",
+          "reflectionPrompt": "Why does this value matter right now?"
+        },
+        {
+          "dayIndex": 1,
+          "heading": "Notice",
+          "instruction": "Watch for moments where fear of results tempts you to avoid the right action.",
+          "reflectionPrompt": "What avoidance pattern appeared?"
+        },
+        {
+          "dayIndex": 2,
+          "heading": "Practice",
+          "instruction": "Take one small value-aligned action that you have postponed.",
+          "reflectionPrompt": "How did action change your mindset?"
+        },
+        {
+          "dayIndex": 3,
+          "heading": "Apply",
+          "instruction": "Before a task, define success as quality of effort and integrity of method.",
+          "reflectionPrompt": "Did your definition of success reduce pressure?"
+        },
+        {
+          "dayIndex": 4,
+          "heading": "Examine",
+          "instruction": "Identify one choice where you optimized for approval over principle and rewrite your preferred response.",
+          "reflectionPrompt": "What would courageous consistency look like there?"
+        },
+        {
+          "dayIndex": 5,
+          "heading": "Integrate",
+          "instruction": "Create a brief pre-action checklist: value, next step, and tone.",
+          "reflectionPrompt": "Which part of the checklist was most useful?"
+        },
+        {
+          "dayIndex": 6,
+          "heading": "Review",
+          "instruction": "Describe one uncertain outcome you can now meet with steadier effort.",
+          "reflectionPrompt": "How will you practice value-first action tomorrow?"
+        }
+      ],
+      "sourceNote": "Inspired by Stoic emphasis on character and intentional conduct.",
+      "tags": [
+        "values",
+        "action",
+        "resilience"
+      ]
+    }
+  ]
+}
