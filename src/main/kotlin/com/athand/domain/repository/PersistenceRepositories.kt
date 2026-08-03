@@ -3,6 +3,7 @@ package com.athand.domain.repository
 import com.athand.domain.model.PracticeDayKey
 import com.athand.domain.model.PracticeProgress
 import com.athand.domain.model.ReflectionEntry
+import com.athand.domain.model.UserPreferences
 import java.time.Instant
 
 data class RepositoryLoadResult<T>(
@@ -20,4 +21,10 @@ interface ProgressRepository {
     suspend fun loadProgress(): RepositoryLoadResult<PracticeProgress>
 
     suspend fun setCompleted(dayKey: PracticeDayKey, completed: Boolean, completedAt: Instant)
+}
+
+interface PreferencesRepository {
+    suspend fun loadPreferences(): RepositoryLoadResult<UserPreferences>
+
+    suspend fun savePreferences(preferences: UserPreferences)
 }
